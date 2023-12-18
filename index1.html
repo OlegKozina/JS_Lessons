@@ -8,14 +8,14 @@
 <body>
  <header>
     <nav>
-        <a href="#">
+        <a href="index1.html">
             <img src="./Html_Images/logo.svg" alt="Логотип сучасної пекарні">
         </a>
         <ul>
-            <li><a href="#">Франшиза</a></li>
-            <li><a href="#">Наші традиції</a></li>
-            <li><a href="#">Формати</a></li>
-            <li><a href="#">Контакти</a></li>
+            <li><a href="#traditions">Наші традиції</a></li>
+            <li><a href="#cooks">Шеф-кухарі</a></li>
+            <li><a href="#formats">Формати</a></li>
+            <li><a href="#contacts">Контакти</a></li>
         </ul>
     </nav>
   <button type="button">Замовити дзвінок</button>
@@ -23,8 +23,9 @@
  <main>
      <section>
         <h1>Сучасна Пекарня</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iUuKstAWof4?si=qLrhDG-sm7S3KjoR" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
      </section>
-     <section>
+     <section id="traditions">
         <ul>
             <li>Великий попит на ринку</li>
             <li>Доступні за бюджетом формати</li>
@@ -40,21 +41,21 @@
                   <img src="./Html_Images/baker-man.jpg" alt="Чоловік пекар">
                 
      </section>
-     <section>
+     <section id="cooks">
         <h2>Найкращі шеф-кухарі</h2>
         <ul>
-            <img src="./Html_Images/Nastia.jpg" alt="Пекар Настя">
              <li> <article>
                 <h3>Настя</h3>
+                <img src="./Html_Images/Nastia.jpg" alt="Пекар Настя">
                 <p>Привіт, я Настя! </p>
                 <p>Вже 10 років, я свтілюю 
                         у життя цікаві та смачні ідеї.</p>
                 <p>Я випічу для вас
                     найсмачніщі вироби!</p>
             </article></li>
-            <img src="./Html_Images/Vlad.jpg" alt="Пекар Влад">
             <li> <article>
                 <h3>Влад</h3>
+                <img src="./Html_Images/Vlad.jpg" alt="Пекар Влад">
                 <p>Привіт, я Влад!</p>
                 <p>Мій кодитерський стаж вже 18 років. 
                     SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами через нашу випічку!</p>
@@ -64,7 +65,7 @@
        
        
      </section>
-     <section>
+     <section id="formats">
         <h2>Формати</h2>
         <ul>
             <li> <article>
@@ -78,13 +79,19 @@
             </article></li>
         </ul>
      </section>
-     <section>
+     <section id="contacts">
         <h2>Приєднуйтесь до мережі пекарень</h2>
      </section>
 
  </main>
  <footer>
-
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506.36438600211176!2d30.490918479799635!3d50.45654736601213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf528c8ab9d7%3A0xbd33cf2777e7d2d!2z0J_QvtGB0L7Qu9GM0YHRgtCy0L4g0KHQqNCQ!5e0!3m2!1sru!2sca!4v1702854775282!5m2!1sru!2sca" 
+    width="400" 
+    height="395" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
 <nav>
     <a href="#">
         <!-- Logo -->
@@ -104,8 +111,8 @@
             вул. Січових Стрільців 54</a></li>
         <li><a href="https://www.instagram.com/" target="_blank">instagram.com</a></li>
     </ul>
-    <li><a href="#" target="_blank">Політика конфіденційності</a></li>
-    <p>Дані захищені!</p>
+    <a href="#" target="_blank">Політика конфіденційності</a>
+    <p>&copy;Дані захищені!</p>
 </address>
  </footer>
 </body>
