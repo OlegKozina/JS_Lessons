@@ -1,20 +1,68 @@
+:root{
+    --colorb: #819B57;
+    --colorch: #FAF4EA;
+    --color_primarydark:#31261A;
+}
+/* Global */
+ul {
+    list-style-type:none;
+}
+body{
+    color: var(--color_primarydark);
+}
+
+
+/* Button */
+.button{
+    background-color: var(--colorb);
+    color: var(--colorch);
+    border:  solid var(--colorb);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.button:hover{ background-color: transparent;
+    color: #819B57;
+}
+
+.button:active{ background-color: blue;
+    color: var(--colorb);
+}
+
+/* Link */
+.link{
+    color: var(--colorch);
+}
+.link:hover{
+    color: var(--colorb);
+}
+
+/* Hero Section */
+.hero-title{
+    color: var(--colorch);
+}
+.hero-title .accent {
+    color: var(--colorb);
+}
+
 h1{
     color: black;
     background-color: red;
     border: 4px solid black;
 }
+/* HeadFooter Section */
+.headfooter{
+    color: var(--colorch);
+    background-color: var(--colorb);
+}
+/* Cook section */
 .cook{
     color: chocolate;
 }
-.cookers >h2 {
-    color: aquamarine;
-}
-.button{
-    background-color: #819B57;
-    color: #FAF4EA;
-    border:  solid #819B57;
-    border-radius: 8px;
-}
-.button:hover{ color: blue;
 
+/* Section Titles */
+.section-titles{
+    color:black;
+}
+.section-titles .chefs{
+    color: var(--colorb);
 }
