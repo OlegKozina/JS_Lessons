@@ -1,0 +1,20 @@
+h1{
+    color: black;
+    background-color: red;
+    border: 4px solid black;
+}
+.cook{
+    color: chocolate;
+}
+.cookers >h2 {
+    color: aquamarine;
+}
+.button{
+    background-color: #819B57;
+    color: #FAF4EA;
+    border:  solid #819B57;
+    border-radius: 8px;
+}
+.button:hover{ color: blue;
+
+}
