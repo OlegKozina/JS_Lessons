@@ -39,6 +39,7 @@ body{
 /* Hero Section */
 .hero-title{
     color: var(--colorch);
+    font-family: 'arial black';
 }
 .hero-title .accent {
     color: var(--colorb);

@@ -1,0 +1,46 @@
+:root{
+    --color_primary_dark: #000000;
+    --color_primary_light: #FFFFFF;
+    --color_secondary_light:#2B7FFF;
+    --color_secondary_dark:#011C44;
+}
+ul {
+    list-style-type:none;
+}
+body{
+    color: var(--color_primarydark);
+}
+.logo_text{
+    color: var(--color_secondary_light);
+    font-family: chalkduster;
+}
+.hero-title{
+    color: var(--color_secondary_light);
+    font-family: chalkduster;
+}
+.button{
+    background-color:var(--color_secondary_light) ;
+    color: var(--color_primary_light);
+    border-radius: 8px;
+    border:  solid;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: transparent;
+    color: var(--color_secondary_dark);
+}
+.link{
+    color: var(--color_primary_dark);
+}
+.link:hover{
+    color: var(--color_secondary_light);
+}
+.section{
+    color: var(--color_secondary_dark);
+}
+.accent{
+    color: var(--color_secondary_light);
+}
+.reg_text{
+    color: var(--color_primary_dark);
+}
