@@ -1,3 +1,36 @@
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); 
+  }
+
+  @font-face {
+    font-display: swap; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'); 
+  }
+
+  @font-face {
+    font-display: swap; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'); 
+  }
+
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
+  }
+/* Global */
 :root{
     --color_primary_dark: #000000;
     --color_primary_light: #FFFFFF;
@@ -9,15 +42,26 @@ ul {
 }
 body{
     color: var(--color_primarydark);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
 }
+address{
+    font-style: normal;
+}
+
+/* Logo */
 .logo_text{
     color: var(--color_secondary_light);
-    font-family: chalkduster;
+    font-family: 'Play', sans-serif;
 }
+/* Hero */
 .hero-title{
     color: var(--color_secondary_light);
-    font-family: chalkduster;
+    font-family: 'Play', sans-serif;
 }
+/* Buttom */
 .button{
     background-color:var(--color_secondary_light) ;
     color: var(--color_primary_light);
@@ -29,18 +73,45 @@ body{
     background-color: transparent;
     color: var(--color_secondary_dark);
 }
+/* Links */
 .link{
     color: var(--color_primary_dark);
+    text-decoration: none;
+}
+.link_footer{
+    color: var(--color_primary_light);
+    text-decoration: none;
 }
 .link:hover{
     color: var(--color_secondary_light);
+    
 }
+.link_footer:hover{
+    color: var(--color_secondary_light);
+    text-decoration: none;
+}
+/* Sections */
 .section{
     color: var(--color_secondary_dark);
+    font-family: 'Play', sans-serif;
 }
 .accent{
     color: var(--color_secondary_light);
 }
-.reg_text{
-    color: var(--color_primary_dark);
+.under_call_button{
+    font-weight: 400;
+    font-size: 12px;
+}
+/* Footer */
+.contact_item{
+    text-decoration: none;
+    color: var(--color_primary_light);
+}
+.contact_item:hover{
+    color: var(--color_secondary_light);
+}
+.copyright{
+    color: #747272;
+    font-size: 13px;
+    font-weight: 400;
 }
