@@ -220,6 +220,9 @@ color: var(--colorb);
 }
 .chefs-container{
     display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
 }
 .chefs-title::before,
 .chefs-title::after{
@@ -242,7 +245,9 @@ color: var(--colorb);
 .section-titles .chefs{
     color: var(--colorb);
 }
-
+.cooks-text{
+    max-width: 334px;
+}
 /* Formats section */
 .formats-title{
     margin-bottom: 80px;
@@ -259,6 +264,8 @@ color: var(--colorb);
 }
 .formats-list{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 .formats-item{
@@ -282,11 +289,24 @@ color: var(--colorb);
 .policy{
     font-size: 12px;
 }
+.contacts-container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.form{
+    max-width: 605px;
+}
+.map{
+    display: flex;
+    flex-grow: 1;
+}
 
 /* Footer section */
 .contacts_item{
     font-size: 16px;
     font-weight: 300;
+    max-width: 211px;
     color: var(--colorch);
     text-decoration: none;
 }
@@ -305,4 +325,21 @@ color: var(--colorb);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.footer-container{
+    display: flex;
+    align-items: top;
+    gap: 40px;
+}
+.footer-nav{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+} 
+.footer-menu{
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: space-evenly;
 }

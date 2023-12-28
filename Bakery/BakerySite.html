@@ -12,7 +12,7 @@
     <div class="container">
        <div class="header-container">
         <nav class="header-nav">
-            <a href="index1.html">
+            <a href="BakerySite.html">
                 <img src="./Html_Images/logo.svg" alt="Логотип сучасної пекарні">
             </a>
             <ul class="header-menu">
@@ -61,8 +61,8 @@
         <div class="container">
             <h2 class="chefs-title section-titles centered">Наші найкращі <span class="chefs">шеф-кухарі</span></h2>
             <ul class="chefs-container">
-                <li> <article>
-                   <img class="chefs-image" src="./Html_Images/Nastia.jpg" alt="Пекар Настя">
+                <img class="chefs-image" src="./Html_Images/Nastia.jpg" alt="Пекар Настя">
+                <li class="cooks-text"> <article>
                    <h3 class="cook">Настя</h3>
                    <p>Привіт, я Настя! </p>
                    <p>Вже 10 років, я свтілюю 
@@ -70,8 +70,8 @@
                    <p>Я випічу для вас
                        найсмачніщі вироби!</p>
                </article></li>
-               <li> <article>
-                   <img class="chefs-image" src="./Html_Images/Vlad.jpg" alt="Пекар Влад">
+               <img class="chefs-image" src="./Html_Images/Vlad.jpg" alt="Пекар Влад">
+               <li class="cooks-text"> <article>
                    <h3 class="cook">Влад</h3>
                    <p>Привіт, я Влад!</p>
                    <p>Мій кодитерський стаж вже 18 років. 
@@ -117,44 +117,56 @@
      </section>
      <section clas="section" id="contacts">
         <div class="container">
-            <h2 class="contacts-title section-titles">Приєднуйтесь до мережі пекарень</h2>
-         <p>Заповни форму, щоб ми зв'язались з тобою</p>
-         <button class="button" type="button" >Замовити дзвінок</button>
-         <p class="policy" >Натискаючи на кнопку я погоджуюсь з політикою конфіденційності</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506.36438600211176!2d30.490918479799635!3d50.45654736601213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf528c8ab9d7%3A0xbd33cf2777e7d2d!2z0J_QvtGB0L7Qu9GM0YHRgtCy0L4g0KHQqNCQ!5e0!3m2!1sru!2sca!4v1702854775282!5m2!1sru!2sca" 
-        width="400" 
-        height="395" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+            <div class="contacts-container">
+                <div class="form">
+                    <h2 class="contacts-title section-titles">Приєднуйтесь до мережі пекарень</h2>
+                <p>Заповни форму, щоб ми зв'язались з тобою</p>
+                <button class="button" type="button" >Замовити дзвінок</button>
+                <p class="policy" >Натискаючи на кнопку я погоджуюсь з політикою конфіденційності</p>
+                </div>
+               <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506.36438600211176!2d30.490918479799635!3d50.45654736601213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf528c8ab9d7%3A0xbd33cf2777e7d2d!2z0J_QvtGB0L7Qu9GM0YHRgtCy0L4g0KHQqNCQ!5e0!3m2!1sru!2sca!4v1702854775282!5m2!1sru!2sca" 
+               width="400" 
+               height="395" 
+               allowfullscreen="" 
+               loading="lazy" 
+               referrerpolicy="no-referrer-when-downgrade">
+               </iframe>
+            </div>
         </div>
      </section>
  </main>
  <footer class="footer">
 <div class="container">
-    <nav>
-        <a href="#">
-            <!-- Logo -->
-        </a>
+    <div class="footer-container">
+        <nav class="footer-nav">
+            <a href="BakerySite.html">
+                <img src="./Html_Images/logo.svg" alt="Логотип сучасної пекарні">
+            </a>
+            <div class="footer-menu">
+                <ul>
+                    <li><a class="link" href="#traditions">Франшиза</a></li>
+                    <li><a class="link" href="#cooks">Шеф-кухарі</a></li>
+                    <li><a class="link" href="#formats">Формати</a></li>
+                    <li><a class="link" href="#contacts">Контакти</a></li>
+                </ul>
+                <address>
+                    <ul>
+                        <li><a class="contacts_item" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
+                        <li><a class="contacts_item" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
+                        <li><a class="contacts_item" href="https://maps.app.goo.gl/S6ubsjYejrpp1G1W6" target="_blank"> Україна, м. Київ, 
+                            вул. Січових Стрільців 54</a></li>
+                        <li><a class="contacts_item" href="https://www.instagram.com/" target="_blank">instagram.com</a></li>
+                        
+                    </ul>
+                </address>
+            </div>
+        </nav>
         <ul>
-            <li><a class="link" href="#traditions">Франшиза</a></li>
-            <li><a class="link" href="#cooks">Шеф-кухарі</a></li>
-            <li><a class="link" href="#formats">Формати</a></li>
-            <li><a class="link" href="#contacts">Контакти</a></li>
+            <li> <a class="contacts_item" href="#" target="_blank">Політика конфіденційності</a></li>
+            <li> <p class="protection" >&copy;Дані захищені!</p></li>
         </ul>
-    </nav>
-    <address>
-        <ul>
-            <li><a class="contacts_item" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-            <li><a class="contacts_item" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
-            <li><a class="contacts_item" href="https://maps.app.goo.gl/S6ubsjYejrpp1G1W6" target="_blank"> Україна, м. Київ, 
-                вул. Січових Стрільців 54</a></li>
-            <li><a class="contacts_item" href="https://www.instagram.com/" target="_blank">instagram.com</a></li>
-        </ul>
-             <a class="contacts_item" href="#" target="_blank">Політика конфіденційності</a>
-             <p class="protection" >&copy;Дані захищені!</p>
-    </address>
+       
+    </div>
 </div>
  </footer>
 </body>
