@@ -11,7 +11,7 @@
         <div class="container">
             <div class="header-conteiner">
                 <nav class="header-nav">
-                    <p class="logo_text">Beauty zone</p>
+                    <p class="logo_text">Beauty <br>zone</p>
                     <ul class="header-menu">
                         <li><a class="link" href="#About_us">Про нас</a> </li>
                         <li><a class="link" href="#Why_us">Чому ми</a></li>
@@ -38,21 +38,35 @@
                 <p class="under_call_button">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
             </div>
         </section>
-        <section id="About_us">
+        <section class="section" id="About_us">
             <div class="container">
-                <h2 class="section">Перевтілюйтесь в <span class="accent">beauty zone!</span></h2>
-                <p>Наша косметологічна клініка пропонує вам професійні послуги з догляду за шкірою обличчя та тіла.</p>
-                <p>B Beauty zone ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою красу та молодість. З нами краса назавжди!</p>
+            <div class="transformation">
+                <div class="transformation-text">
+                    <h2 class="section-titles intro-title">Перевтілюйтесь в <span class="accent">beauty zone!</span></h2>
+                    <p>Наша косметологічна клініка пропонує вам професійні послуги з догляду за шкірою обличчя та тіла.</p>
+                    <p>B Beauty zone ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою красу та молодість. З нами краса назавжди!</p>
+                </div>
+                <ul class="transformation-pics">
+                    <li><img src="/Beauty Zone/html_images/before.jpg" alt=""></li>
+                    <li><img src="/Beauty Zone/html_images/after.jpg" alt=""></li>
+                </ul>
+            </div>
             </div>
         </section>
-        <section id="Why_us"> 
+        <section class="section" id="Why_us"> 
             <div class="container">
-                <h2 class="section">Чому люди <span class="accent">обирають нас</span></h2>
+                <h2 class="section-titles centered why-title">Чому люди <span class="accent">обирають нас</span></h2>
+                <ul class="reasons">
+                    <li class="reason">Всі наші косметологи мають вищу медичну освіту 
+                        та стаж роботи від 5 років</li>
+                    <li class="reason">Використовуємо тільки професійне обладнання та косметику, перевірену часом</li>
+                    <li class="reason">Наша мета - підкреслити переваги та приховати недоліки, а не переробити</li>
+                </ul>
             </div>
         </section>
-        <section id="Our_services">
+        <section class="section" id="Our_services">
             <div class="container">
-                <h2 class="section">Наші <span class="accent">процедури</span></h2>
+                <h2 class="section-titles centered">Наші <span class="accent">процедури</span></h2>
                 <div class="procedures-photos">
                     <img src="html_images/процедуры_де..png" alt="First">
                     <img src="html_images/процедуры_де1..png" alt="Second">
@@ -60,37 +74,50 @@
                 </div>
             </div>
         </section>
-        <section id="Contacts">
+        <section class="section" id="Contacts">
             <div class="container">
-                <h2 class="section">Як нас <span class="accent">знайти</span></h2>
-                <img src="html_images/карта.png" alt="map">
+                <h2 class="section-titles centered">Як нас <span class="accent">знайти</span></h2>
+                <div class="howtofind">
+                    <img src="html_images/карта.png" alt="map">
+                    <ul class="howtofind-text">
+                        <li>Запишіться <span class="accent">безкоштовно</span>
+                            та отримайте подарунок</li>
+                        <li><button class="button" type="button">Записатись безкоштовно</button></li>
+                        <li class="approve">Натискаючи на кнопку я погоджуюсь з політикою конфіденційності</li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
-            <nav>
-                <p class="logo_text">Beauty zone</p>
-                <ul>
-                    <li><a class="link_footer" href="#About_us">Про нас</a> </li>
-                    <li><a class="link_footer" href="#Why_us">Чому ми</a></li>
-                    <li><a class="link_footer" href="#Our_services">Наші процедури</a></li>
-                    <li><a class="link_footer" href="#Contacts">Контакти</a></li>
-                </ul>
-            </nav>
-            <address>
-                <ul>
-                    <li><a class="contact_item" href="tel:+18253337707"> + 38 (096) 000 00 07 </a> </li>
-                    <li><a class="contact_item" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a></li>
-                    <li><a class="contact_item" href="https://maps.app.goo.gl/2UwzakEpYmpTCDCZ9" target="_blank">Україна, м. Київ, вул. Тараса Шевченка 5</a></li>
-                    <li><a href="https://www.instagram.com/okayne__/" target="_blank"> <img src="html_images/ph_instagram-logo-light.svg" alt=""> </a></li>
-                    <li><a href="https://www.facebook.com/olliekayne" target="_blank"> <img src="html_images/uit_facebook-f.svg" alt=""> </a></li>
-                </ul>
-                <a class="link_footer" href="#" target="_blank">Політика конфіденційності</a>
-            <p class="copyright" >&copy;Дані захищені!</p>
-            </address>
+            <div class="footer-container">
+                <nav class="footer-nav">
+                    <p class="logo_text">Beauty <br>zone</p>
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a class="link_footer" href="#About_us">Про нас</a> </li>
+                            <li><a class="link_footer" href="#Why_us">Чому ми</a></li>
+                            <li><a class="link_footer" href="#Our_services">Наші процедури</a></li>
+                            <li><a class="link_footer" href="#Contacts">Контакти</a></li>
+                        </ul>
+                        <address>
+                            <ul>
+                                <li><a class="contact_item" href="tel:+18253337707"> + 38 (096) 000 00 07 </a> </li>
+                                <li><a class="contact_item" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a></li>
+                                <li><a class="contact_item" href="https://maps.app.goo.gl/2UwzakEpYmpTCDCZ9" target="_blank">Україна, м. Київ, вул. Тараса Шевченка 5</a></li>
+                                <li><a href="https://www.instagram.com/okayne__/" target="_blank"> <img src="html_images/ph_instagram-logo-light.svg" alt=""> </a></li>
+                                <li><a href="https://www.facebook.com/olliekayne" target="_blank"> <img src="html_images/uit_facebook-f.svg" alt=""> </a></li>
+                            </ul>
+                        </address>
+                    </div>
+                    <ul>
+                        <li><a class="link_footer" href="#" target="_blank">Політика конфіденційності</a></li>
+                        <li><p class="copyright" >&copy;Дані захищені!</p></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        
     </footer>
 </body>
 </html>

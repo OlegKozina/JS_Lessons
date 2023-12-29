@@ -50,6 +50,21 @@ body{
 address{
     font-style: normal;
 }
+.section{
+    padding: 48px 0;
+}
+.section-titles{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color_secondary_dark);
+    font-family: 'Play', sans-serif;
+}
+.section-titles.centered{
+    text-align: center;
+}
 
 /* Logo */
 .logo_text{
@@ -60,12 +75,14 @@ address{
 .hero-title{
     color: var(--color_secondary_light);
     font-family: 'Play', sans-serif;
+    font-size: 140px;
 }
-/* Buttom */
+/* Button */
 .button{
+    padding: 16px 32px;
     background-color:var(--color_secondary_light) ;
     color: var(--color_primary_light);
-    border-radius: 8px;
+    border-radius: 32px;
     border:  solid;
     cursor: pointer;
 }
@@ -120,6 +137,7 @@ address{
 }
 /* Sections */
 
+/* Hero section */
 .hero-section{
     padding: 272px 0;
     background-image: url('../html_images/hero-title_image.jpg');
@@ -128,20 +146,67 @@ address{
     background-size: cover;
     background-attachment: fixed;
 }
-.section{
-    color: var(--color_secondary_dark);
-    font-family: 'Play', sans-serif;
-}
+
 .accent{
     color: var(--color_secondary_light);
 }
+.under_call_button{
+    font-weight: 400;
+    font-size: 12px;
+}
+/* Intro Section */
 
+.transformation{
+    display: flex;
+    align-items: top;
+}
+.transformation-text{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 709px;
+    font-size: 22px;
+}
+.intro-title{
+    max-width: 529px;
+}
+/* Why section */
+.why-title{
+    max-width: 450px;
+}
+.reasons{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.reason{
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    height: 181px;
+    width: 316px;
+    align-items: center;
+}
+/* Procedures section */
 .procedures-photos{
     display: flex;
     gap: 40px;
 }
-.under_call_button{
-    font-weight: 400;
+/* How to find section */
+.howtofind{
+    display: flex;
+    gap: 40px;
+    align-items: top;
+    justify-content: center;
+   
+}
+.howtofind-text{
+        max-width: 310px;
+        display: flex;
+        flex-direction: column;
+        align-items: top;
+        gap: 40px;
+}
+.approve{
     font-size: 12px;
 }
 /* Footer */
@@ -159,4 +224,21 @@ address{
     color: #747272;
     font-size: 13px;
     font-weight: 400;
+}
+.footer-container{
+    display: flex;
+    align-items: top;
+    gap: 40px;
+}
+.footer-nav{
+    display: flex;
+    align-items: top;
+    flex-grow: 1;
+    gap: 40px;
+}
+.footer-menu{
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: space-evenly;
 }

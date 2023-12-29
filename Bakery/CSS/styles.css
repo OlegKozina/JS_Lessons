@@ -280,6 +280,24 @@ color: var(--colorb);
     font-size: 14px;
     font-weight: 300;
 }
+.carousel-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--color_primarydark);
+    cursor: pointer;
+    fill: var(--color_primarydark);
+}
+.carousel-button:hover{
+    background-color: var(--color_primarydark);
+    fill: var(--colorch);
+}
+
 
 /* Contacts section */
 
@@ -342,4 +360,7 @@ color: var(--colorb);
     gap: 64px;
     flex-grow: 1;
     justify-content: space-evenly;
+}
+.address-icon{
+    fill: var(--colorch);
 }
