@@ -22,7 +22,7 @@
                 <li><a class="link" href="#contacts">Контакти</a></li>
             </ul>
         </nav>
-        <button class="button" type="button" >Замовити дзвінок</button>
+        <button class="modal-btn-open" type="button" >Замовити дзвінок</button>
        </div> 
     </div>
  </header>
@@ -53,7 +53,7 @@
                          А ще у наших пекарень стильний дизайн
                          та висока якість обслуговування!</p>
                 </div>
-                <img src="./Html_Images/baker-man.jpg" alt="Чоловік пекар">  
+                <img class="baker-image" src="./Html_Images/baker-man.jpg" alt="Чоловік пекар">  
             </div> 
         </div>
      </section>
@@ -61,22 +61,26 @@
         <div class="container">
             <h2 class="chefs-title section-titles centered">Наші найкращі <span class="chefs">шеф-кухарі</span></h2>
             <ul class="chefs-container">
-                <img class="chefs-image" src="./Html_Images/Nastia.jpg" alt="Пекар Настя">
-                <li class="cooks-text"> <article>
-                   <h3 class="cook">Настя</h3>
-                   <p>Привіт, я Настя! </p>
-                   <p>Вже 10 років, я свтілюю 
-                           у життя цікаві та смачні ідеї.</p>
-                   <p>Я випічу для вас
-                       найсмачніщі вироби!</p>
+                <li> <article class="chefs-item">
+                  <img class="chefs-image" src="./Html_Images/Nastia.jpg" alt="Пекар Настя">
+                  <div class="cooks-text">
+                    <h3 class="cook">Настя</h3>
+                    <p>Привіт, я Настя! </p>
+                    <p>Вже 10 років, я втілюю <br> 
+                            у життя цікаві та смачні ідеї.</p>
+                    <p>Я випічу для вас <br>
+                        найсмачніщі вироби!</p>
+                  </div>
                </article></li>
-               <img class="chefs-image" src="./Html_Images/Vlad.jpg" alt="Пекар Влад">
-               <li class="cooks-text"> <article>
-                   <h3 class="cook">Влад</h3>
-                   <p>Привіт, я Влад!</p>
-                   <p>Мій кодитерський стаж вже 18 років. 
-                       SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами через нашу випічку!</p>
-                   <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+               <li> <article class="chefs-item">
+                <img class="chefs-image" src="./Html_Images/Vlad.jpg" alt="Пекар Влад">
+                <div class="cooks-text">
+                    <h3 class="cook">Влад</h3>
+                    <p>Привіт, я Влад!</p>
+                    <p>Мій кодитерський стаж вже 18 років. 
+                        SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами через нашу випічку!</p>
+                    <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                  </div>
                </article></li>
            </ul>
            </div>
@@ -84,6 +88,7 @@
      <section class="section" id="formats">
        <div class="container">
         <h2 class="formats-title section-titles centered">Формати</h2>
+       <div class="formats-container">
         <button class="carousel-button" type="button">
             <svg class="carousel-arrow" width="16" height="16">
                 <use href="./Html_Images/icons.svg#icon-arrow"></use>
@@ -124,6 +129,7 @@
             </svg>
         </button>
        </div>
+       </div>
      </section>
      <section clas="section" id="contacts">
         <div class="container">
@@ -149,9 +155,11 @@
 <div class="container">
     <div class="footer-container">
         <nav class="footer-nav">
-            <a href="BakerySite.html">
-                <img src="./Html_Images/logo.svg" alt="Логотип сучасної пекарні">
-            </a>
+            <div class="footer-logo">
+                <a href="BakerySite.html">
+                    <img src="./Html_Images/logo.svg" alt="Логотип сучасної пекарні">
+                </a>
+            </div>
             <div class="footer-menu">
                 <ul>
                     <li><a class="link" href="#traditions">Франшиза</a></li>
@@ -165,17 +173,21 @@
                         <li><a class="contacts_item" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
                         <li><a class="contacts_item" href="https://maps.app.goo.gl/S6ubsjYejrpp1G1W6" target="_blank"> Україна, м. Київ, 
                             вул. Січових Стрільців 54</a></li>
-                        <li><a class="contacts_item" href="#">
-                            <svg class="address-icon" width="32" height="32">
-                                <use href="./Html_Images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a></li>
-                        <li><a class="contacts_item" href="#">
-                            <svg class="address-icon" width="32" height="32">
-                                <use href="./Html_Images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a></li>
-                        
+                        <li>
+                            <div class="icons-footer">
+                                <a class="contacts_item" href="#">
+                                    <svg class="address-icon" width="32" height="32">
+                                        <use href="./Html_Images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                                <a class="contacts_item" href="#">
+                                    <svg class="address-icon" width="32" height="32">
+                                        <use href="./Html_Images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                            
                     </ul>
                 </address>
             </div>
@@ -188,5 +200,11 @@
     </div>
 </div>
  </footer>
+ <div class="backdrop">
+    <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+    </div> 
+ </div>
+ <script src="./JS/modal.js"></script>
 </body>
 </html>

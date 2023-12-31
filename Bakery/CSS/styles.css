@@ -49,7 +49,9 @@ body{
 address{
     font-style: normal;
 }
-*{
+*, 
+*::after,
+*::before{
     box-sizing: border-box;
 }
 h1, 
@@ -75,6 +77,8 @@ p{
     display:flex;
     align-items: center;
     gap: 40px; 
+    position: absolute;
+    z-index: 2;
 }
 .header-nav{
     display: flex;
@@ -89,7 +93,7 @@ p{
     justify-content: center;
 }
 /* Button */
-.button{
+.modal-btn-open{
     padding: 16px 32px;
     background-color: var(--colorb);
     color: var(--colorch);
@@ -137,7 +141,8 @@ p{
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
-    /* background: url('../Html_Images/image\ 1559.jpg') no-repeat center/top cover; */
+    position: relative;
+    
 }
 .hero-title{
     color: var(--colorch);
@@ -211,30 +216,52 @@ max-width: 340px;
 .fivemin{
 color: var(--colorb);
 }
+.baker-image{
+   border-radius:  400px 400px 0px 0px;
+}
 
 /* Cook section */
 
 .chefs-title{
     margin-bottom: 80px;
     max-width: 520px;
+    position: relative;
 }
 .chefs-container{
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    flex-wrap: wrap;
 
 }
-.chefs-title::before,
+.chefs-title::before{
+    display: block;
+    width: 352px;
+    height: 2px;
+    background-color: #CFCFBC;
+    content: '';
+    position: absolute;
+    left: -360px;
+    bottom: 24px;
+}
+
 .chefs-title::after{
     display: block;
     width: 352px;
     height: 2px;
     background-color: #CFCFBC;
     content: '';
+    position: absolute;
+    right: -360px;
+    bottom: 24px;
 }
 .chefs-image{
     border-radius: 4px 4px 4px 200px;
     box-shadow: -16px 16px 0px 0px var(--colorch), -16px 16px 0px 2px black;
+}
+.chefs-item{
+    display: flex;
+    gap: 30px;
 }
 .cook{
     margin-bottom: 16px;
@@ -247,7 +274,15 @@ color: var(--colorb);
 }
 .cooks-text{
     max-width: 334px;
+
 }
+.cooks-text p{
+    margin-bottom: 26px;
+}
+.cooks-text p:last-child{
+    margin-bottom: 0px;
+}
+
 /* Formats section */
 .formats-title{
     margin-bottom: 80px;
@@ -261,6 +296,11 @@ color: var(--colorb);
     background-repeat: no-repeat;
     background-size: cover;
     background-image: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
+}
+.formats-container{
+    display: flex;
+    gap: 33px;
+    align-items: center;
 }
 .formats-list{
     display: flex;
@@ -311,13 +351,18 @@ color: var(--colorb);
     display: flex;
     align-items: center;
     gap: 40px;
+    padding-bottom: 96px;
 }
 .form{
     max-width: 605px;
 }
 .map{
     display: flex;
-    flex-grow: 1;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+    width: 603px;
+    height: 595px;
 }
 
 /* Footer section */
@@ -338,11 +383,16 @@ color: var(--colorb);
     font-weight: 400;
 }
 .footer {
+    position: relative;
+    padding: 32px 0;
     background-image: url('../Html_Images/footer-image.png');
     background-color: #31261A;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.footer-logo{
+    display: inline-block;
 }
 .footer-container{
     display: flex;
@@ -351,7 +401,7 @@ color: var(--colorb);
 }
 .footer-nav{
     display: flex;
-    align-items: center;
+    align-items: top;
     flex-grow: 1;
     gap: 40px;
 } 
@@ -361,6 +411,56 @@ color: var(--colorb);
     flex-grow: 1;
     justify-content: space-evenly;
 }
+.icons-footer{
+    display: flex;
+    gap: 20px;
+}
 .address-icon{
     fill: var(--colorch);
+}
+.footer::before{
+    width: 180px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-image: url(../Html_Images/bread.png);
+    content: '';
+    position: absolute;
+    bottom: 0;
+}
+.footer::after{
+    width: 380px;
+    height: 190px;
+    background-image: url(../Html_Images/bread-large.png);
+    content: '';
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.backdrop{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.modal{
+    position: relative;
+    width: 880px;
+    height: 880px;
+    background-color: var(--colorch);
+    border-radius: 32px;
+}
+.backdrop.is-hidden{
+    display: none;
+}
+
+.modal-btn-close{
+    position: absolute;
+    top: 40px;
+    right: 40px;
 }
