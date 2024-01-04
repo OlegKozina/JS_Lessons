@@ -426,8 +426,6 @@ color: var(--colorb);
  
 }
 
-
-
 .footer-container{
     display: flex;
     align-items: top;
@@ -573,9 +571,9 @@ input:focus::placeholder{
 .form-terms-link{
     color:#819B57;
 }
-.form-button[disabled]{
+/* .form-button[disabled]{ 
 background-color: gray;
 color: lightgray;
 border-color: currentColor;
 cursor: not-allowed;
-}
+}*/

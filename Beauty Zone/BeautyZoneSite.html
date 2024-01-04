@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="container">
-            <div class="header-conteiner">
+            <div class="header-container">
                 <nav class="header-nav">
                     <p class="logo_text">Beauty <br>zone</p>
                     <ul class="header-menu">
@@ -32,7 +32,7 @@
     <main>
         <section class="hero-section">
             <div class="container">
-                <p>Косметологічна клініка</p>
+                <p class="hero-section-title">Косметологічна клініка</p>
                 <h1 class="hero-title" lang="en">Beauty Zone</h1>
                 <button class="button" type="button" >Замовити дзвінок</button>
                 <p class="under_call_button">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
@@ -56,12 +56,31 @@
         <section class="section" id="Why_us"> 
             <div class="container">
                 <h2 class="section-titles centered why-title">Чому люди <span class="accent">обирають нас</span></h2>
+                <div class="reasons-container">
+                    <button class="button carousel-button" type="button">
+                        Назад
+                        <!-- add svg -->
+                    </button>
                 <ul class="reasons">
-                    <li class="reason">Всі наші косметологи мають вищу медичну освіту 
-                        та стаж роботи від 5 років</li>
-                    <li class="reason">Використовуємо тільки професійне обладнання та косметику, перевірену часом</li>
-                    <li class="reason">Наша мета - підкреслити переваги та приховати недоліки, а не переробити</li>
+                    <li class="reason"> <article class="reason-article"><img src="/Beauty Zone/html_images/reason1.svg" alt="">
+                        <div class="reason-text">
+                            <p>Всі наші косметологи мають вищу медичну освіту 
+                                та стаж роботи від 5 років</p>
+                        </div></article></li>
+                    <li class="reason"> <article class="reason-article"><img src="/Beauty Zone/html_images/reason2.svg" alt="">
+                        <div class="reason-text">
+                            <p>Використовуємо тільки професійне обладнання та косметику, перевірену часом</p>
+                        </div><article></li>
+                    <li class="reason"> <article class="reason-article"><img src="/Beauty Zone/html_images/reason3.svg" alt="">
+                        <div class="reason-text"> 
+                            <p>Наша мета - підкреслити переваги та приховати недоліки, а не переробити</p>
+                        </div></article></li>
                 </ul>
+                <button class="button carousel-button" type="button">
+                    Вперед
+                    <!-- add svg -->
+                </button>
+            </div>
             </div>
         </section>
         <section class="section" id="Our_services">
@@ -76,15 +95,31 @@
         </section>
         <section class="section" id="Contacts">
             <div class="container">
-                <h2 class="section-titles centered">Як нас <span class="accent">знайти</span></h2>
+                <div class="howtofind-container">
+                    <h2 class="section-titles centered">Як нас <span class="accent">знайти</span></h2>
                 <div class="howtofind">
-                    <img src="html_images/карта.png" alt="map">
-                    <ul class="howtofind-text">
-                        <li>Запишіться <span class="accent">безкоштовно</span>
-                            та отримайте подарунок</li>
-                        <li><button class="button" type="button">Записатись безкоштовно</button></li>
-                        <li class="approve">Натискаючи на кнопку я погоджуюсь з політикою конфіденційності</li>
-                    </ul>
+                    <img class="map" src="html_images/карта.png" alt="map">
+                    <div class="howtofind-text">
+                        <p class="form-title">Запишіться <span class="accent">безкоштовно</span>
+                            та отримайте подарунок</p>
+                            <form name="contact-form" autocomplete="off" novalidate>
+                                <div class="form-field">
+                                    <label class="form-label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
+                                    <input class="input" type="text" id="user-name" name="user-name" placeholder="Ваше ім'я та прізвище">
+                                  </div>
+                                  <div class="form-field">
+                                    <label class="form-label visually-hidden" for="phone">Телефон</label>
+                                    <input class="input" type="tel" id="phone" name="phone" placeholder="Ваш номер телефону">
+                                 </div>
+                                  <div class="form-field">
+                                    <label class="form-label visually-hidden" for="e-mail">Електронна пошта</label>
+                                  <input class="input" type="email" id="e-mail" name="e-mail" placeholder="Ваша електронна пошта">
+                                  </div>
+                                  <button class="button" type="button">Записатись безкоштовно</button>
+                        <p class="approve">Натискаючи на кнопку я погоджуюсь з політикою конфіденційності</p>
+                            </form>
+                    </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -105,7 +140,11 @@
                             <ul>
                                 <li><a class="contact_item" href="tel:+18253337707"> + 38 (096) 000 00 07 </a> </li>
                                 <li><a class="contact_item" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a></li>
-                                <li><a class="contact_item" href="https://maps.app.goo.gl/2UwzakEpYmpTCDCZ9" target="_blank">Україна, м. Київ, вул. Тараса Шевченка 5</a></li>
+                                <li><a class="contact_item" href="https://maps.app.goo.gl/2UwzakEpYmpTCDCZ9" target="_blank">Україна, м. Київ,<br> вул. Тараса Шевченка 5</a></li>
+                            </ul>
+                            <ul class="footer-icons">
+                                <!-- Make svg -->
+                                <li><a href="tel:+18253337707"><img src="html_images/telephone-receiver_icon-icons.com_560331.svg" alt="phone_logo"></a></li>
                                 <li><a href="https://www.instagram.com/okayne__/" target="_blank"> <img src="html_images/ph_instagram-logo-light.svg" alt=""> </a></li>
                                 <li><a href="https://www.facebook.com/olliekayne" target="_blank"> <img src="html_images/uit_facebook-f.svg" alt=""> </a></li>
                             </ul>
