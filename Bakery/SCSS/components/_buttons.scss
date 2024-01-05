@@ -1,0 +1,16 @@
+.modal-btn-open{
+    padding: 16px 32px;
+    background-color: var(--colorb);
+    color: var(--colorch);
+    border:  solid var(--colorb);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.button:hover{ background-color: transparent;
+    color: #819B57;
+}
+
+.button:active{ background-color: blue;
+    color: var(--colorb);
+}

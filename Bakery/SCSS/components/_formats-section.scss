@@ -1,0 +1,83 @@
+.formats-title{
+    margin-bottom: 80px;
+}
+.format-card{
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    padding: 24px;
+    height: 444px;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-image: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%), url(../Html_Images/Model1.jpg);
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+.format-card.card1{
+    background-image: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%), url(../Html_Images/Model1.jpg)
+}
+
+.format-card.card2{
+    background-image: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%), url(../Html_Images/Model2.jpg)
+}
+
+.format-card.card3{
+    background-image: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%), url(../Html_Images/Model3.jpg)
+}
+
+.format-card:hover{
+    transform: scale(1.1);
+}
+
+.formats-container{
+    display: flex;
+    gap: 33px;
+    align-items: center;
+}
+.formats-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.formats-item{
+    flex-basis: calc((100% - 40px)/3);
+    flex-wrap: wrap;
+}
+.format_item{
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--colorch);
+    transform:translateY(180px);
+}
+.format_text{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--colorch);
+    transform:translateY(180px);
+}
+.carousel-button, .carousel-button1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--color_primarydark);
+    cursor: pointer;
+    fill: var(--color_primarydark);
+    transition-property: background-color, fill;
+    transition-duration: 1s;
+}
+.carousel-button1{
+    transform: rotate(180deg);
+}
+.carousel-button:hover, .carousel-button1:hover{
+    background-color: var(--color_primarydark);
+    fill: var(--colorch);
+}

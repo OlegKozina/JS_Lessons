@@ -76,7 +76,26 @@ p {
   --color_primarydark:#31261A;
 }
 
-/* Header Container */
+.modal-btn-open {
+  padding: 16px 32px;
+  background-color: var(--colorb);
+  color: var(--colorch);
+  border: solid var(--colorb);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #819B57;
+}
+
+.button:active {
+  background-color: blue;
+  color: var(--colorb);
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -104,28 +123,6 @@ p {
   justify-content: center;
 }
 
-/* Button */
-.modal-btn-open {
-  padding: 16px 32px;
-  background-color: var(--colorb);
-  color: var(--colorch);
-  border: solid var(--colorb);
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.button:hover {
-  background-color: transparent;
-  color: #819B57;
-}
-
-.button:active {
-  background-color: blue;
-  color: var(--colorb);
-}
-
-/* Section Titles */
 .section-titles {
   color: black;
   font-size: 64px;
@@ -139,7 +136,6 @@ p {
   text-align: center;
 }
 
-/* Link */
 .link {
   color: var(--colorch);
   text-decoration: none;
@@ -150,7 +146,6 @@ p {
   color: var(--colorb);
 }
 
-/* Hero Section */
 .hero-section {
   padding: 272px 0;
   background-image: url("../Html_Images/image 1559.jpg");
@@ -178,7 +173,6 @@ h1 {
   color: var(--color_primarydark);
 }
 
-/* Advantages Section */
 .visually-hidden {
   position: absolute;
   left: -10000px;
@@ -207,7 +201,6 @@ h1 {
   color: var(--colorch);
 }
 
-/* Traditions section */
 .traditions-section {
   padding: 96px 0 48px 0;
 }
@@ -244,7 +237,6 @@ h1 {
   border-radius: 400px 400px 0px 0px;
 }
 
-/* Cook section */
 .chefs-title {
   margin-bottom: 80px;
   max-width: 520px;
@@ -316,7 +308,6 @@ h1 {
   margin-bottom: 0px;
 }
 
-/* Formats section */
 .formats-title {
   margin-bottom: 80px;
 }
@@ -407,7 +398,6 @@ h1 {
   fill: var(--colorch);
 }
 
-/* Contacts section */
 .contacts-title {
   margin-bottom: 16px;
 }
@@ -436,7 +426,6 @@ h1 {
   height: 595px;
 }
 
-/* Footer section */
 .contacts_item {
   font-size: 16px;
   font-weight: 300;
@@ -520,7 +509,6 @@ h1 {
   right: 0;
 }
 
-/* Form */
 .cross-button {
   border: none;
   background-color: transparent;

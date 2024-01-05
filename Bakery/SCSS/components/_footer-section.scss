@@ -1,0 +1,73 @@
+.contacts_item{
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 211px;
+    color: var(--colorch);
+    text-decoration: none;
+    transition: color .3s;
+}
+.contacts_item:hover{
+    color: var(--colorb);
+}
+.protection{
+    color: #A18268;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer {
+    position: relative;
+    padding: 32px 0;
+    background-image: url('../Html_Images/footer-image.png');
+    background-color: #31261A;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.footer-logo{
+    display: inline-block;
+ 
+}
+
+.footer-container{
+    display: flex;
+    align-items: top;
+    gap: 40px;
+}
+.footer-nav{
+    display: flex;
+    align-items: top;
+    flex-grow: 1;
+    gap: 40px;
+} 
+.footer-menu{
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+.icons-footer{
+    display: flex;
+    gap: 20px;
+}
+.address-icon{
+    fill: var(--colorch);
+}
+.footer::before{
+    width: 180px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-image: url(../Html_Images/bread.png);
+    content: '';
+    position: absolute;
+    bottom: 0;
+}
+.footer::after{
+    width: 380px;
+    height: 190px;
+    background-image: url(../Html_Images/bread-large.png);
+    content: '';
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
