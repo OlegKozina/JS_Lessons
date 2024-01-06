@@ -1,0 +1,51 @@
+
+.format-card{
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    padding: 24px;
+    height: 444px;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-image: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%), url(../Html_Images/Model1.jpg);
+    transition-property: transform;
+    transition-duration: 0.5s;
+
+    &__item{
+        font-weight: 600;
+        font-size: 24px;
+        color: var(--colorch);
+        transform:translateY(180px);
+    }
+    &__text{
+        font-size: 14px;
+        font-weight: 300;
+        color: var(--colorch);
+        transform:translateY(180px);
+    }
+
+    &:hover{
+    transform: scale(1.1);
+    }
+    &--card1{
+    background-image: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%), url(../Html_Images/Model1.jpg)
+    }
+    &--card2{
+    background-image: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%), url(../Html_Images/Model2.jpg)
+    }
+    &--card3{
+        background-image: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%), url(../Html_Images/Model3.jpg)
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+

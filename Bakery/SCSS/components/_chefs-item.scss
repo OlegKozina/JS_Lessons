@@ -1,0 +1,30 @@
+.chefs-item{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    &__image{
+        list-style: none;
+        border-radius: 4px 4px 4px 200px;
+        box-shadow: -16px 16px 0px 0px var(--colorch), -16px 16px 0px 2px black;
+        
+    }
+    
+    &__cook{
+        margin-bottom: 16px;
+        color: var(--color_primarydark);
+        font-size: 40px;
+        font-weight: 600;
+    }
+    
+    &__text{
+        max-width: 334px;
+        margin-bottom: 26px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+
+    
+
+}
+

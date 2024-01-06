@@ -1,0 +1,48 @@
+.footer{
+    background-color: var(--color_secondary_dark);
+    position: relative;
+}
+.contact_item{
+    text-decoration: none;
+    color: var(--color_primary_light);
+}
+.contact_item:hover{
+    color: var(--color_secondary_light);
+}
+.copyright{
+    color: #747272;
+    font-size: 13px;
+    font-weight: 400;
+}
+.footer-container{
+    display: flex;
+    align-items: top;
+    gap: 40px;
+}
+.footer-nav{
+    display: flex;
+    align-items: top;
+    flex-grow: 1;
+    gap: 40px;
+}
+.footer-menu{
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+.footer-icons{
+    display: flex;
+    background-color: #FFFFFF;
+    gap: 24px;
+}
+footer::after{
+    width: 247px;
+    height: 152px;
+    background-image: url(../html_images/medicine.png);
+    position:absolute;
+    content: '';
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+}

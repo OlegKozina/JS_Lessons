@@ -1,28 +1,27 @@
 .hero-section{
     padding: 272px 0;
-    background-image: url('../Html_Images/image\ 1559.jpg');
     background: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.60) 58.46%, rgba(18, 18, 17, 0.00) 90.36%), url(../Html_Images/image\ 1559.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    
-}
-.hero-title{
-    color: var(--colorch);
-    font-weight: 900;
-    text-align: center;
-   font-size: 128px;
-   margin-bottom: 0;
-    
+
+    &__title{
+        color: var(--colorch);
+        font-weight: 900;
+        text-align: center;
+       font-size: 128px;
+       margin-bottom: 0;
+        
+    }
+
 }
 
-.hero-title .accent {
-    color: var(--colorb);
-}
 
-h1{
-    color: var(--color_primarydark);
+
+
+// h1{
+//     color: var(--color_primarydark);
     
-}
+// }

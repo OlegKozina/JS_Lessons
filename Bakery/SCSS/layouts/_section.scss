@@ -1,0 +1,18 @@
+.section{
+    padding: 48px 0;
+
+    &__titles{
+        color:black;
+        font-size: 64px;
+        font-weight: 900;
+        line-height: 1.3;
+        margin-left: auto;
+        margin-right: auto;
+        &--centered{
+            text-align: center;
+        }
+    } 
+
+}
+
+

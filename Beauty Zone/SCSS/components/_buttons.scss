@@ -1,0 +1,12 @@
+.button{
+    padding: 16px 32px;
+    background-color:var(--color_secondary_light) ;
+    color: var(--color_primary_light);
+    border-radius: 32px;
+    border:  solid;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: transparent;
+    color: var(--color_secondary_dark);
+}

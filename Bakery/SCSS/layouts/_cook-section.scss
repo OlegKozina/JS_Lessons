@@ -1,0 +1,40 @@
+.cooks-section{
+    &__title{
+        margin-bottom: 80px;
+        max-width: 520px;
+        position: relative;
+
+        &::before{
+            display: block;
+            width: 352px;
+            height: 2px;
+            background-color: #CFCFBC;
+            content: '';
+            position: absolute;
+            left: -360px;
+            bottom: 24px;
+        }
+        
+        &::after{
+            display: block;
+            width: 352px;
+            height: 2px;
+            background-color: #CFCFBC;
+            content: '';
+            position: absolute;
+            right: -360px;
+            bottom: 24px;
+        }
+    }
+    &__container{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+        
+    }
+}
+
+
+

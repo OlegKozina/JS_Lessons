@@ -1,0 +1,26 @@
+.why-title{
+    max-width: 450px;
+}
+.reasons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-left: 0;
+}
+.reason{
+    border: 1px solid lightgray;
+    border-radius: 32px;
+    height: 181px;
+    width: 316px;
+    margin: 0 auto;
+}
+.reasons-container{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.reason-article{
+    margin: 24px 32px;
+    width: 252px;
+}
