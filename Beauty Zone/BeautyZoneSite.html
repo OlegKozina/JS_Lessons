@@ -158,5 +158,42 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <button class="modal__cross-button modal-btn-close" type="button"><img src="./Html_Images/icon.svg" alt=""></button>
+            <h2 class="modal__form-title section__titles">Замовити дзвінок</h2>
+            <p class="modal__form-instruction">Запишіться <span>безкоштовно</span> та отримайте подарунок</p>
+            <form name="contact-form" autocomplete="off" validate>
+              <div class="form-field">
+                <label class="form-field__label visually-hidden" for="user-name">Ім'я</label>
+                <input class="form-field__input" 
+                    type="text" 
+                    id="user-name" 
+                    name="user-name" 
+                    placeholder="Ім'я" 
+                    minlength="2"
+                    maxlength="20"
+                    required>
+              </div>
+             <div class="form-field">
+                <label class="form-field__label visually-hidden" for="phone">Телефон</label>
+                <input class="form-field__input" 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    placeholder="Телефон" 
+                    pattern="^\+[0-9]{12}"
+                    required>
+             </div>
+              <div class="form-field">
+                <label class="form-field__label visually-hidden" for="e-mail">Електронна пошта</label>
+              <input class="form-field__input" type="email" id="e-mail" name="e-mail" placeholder="Електронна пошта" required>
+              </div>
+             <button class="form-field__button modal-btn-open" type="submit">Записатись безкоштовно</button>
+             <p class="form-field__terms">Натискаючи на кнопку я погоджуюсь з <a class="form-field__terms-link" href="#">політикою конфіденційності</a></p>
+            </form>
+        </div> 
+     </div>
+     <script src="./JS/modal.js"></script>
 </body>
 </html>

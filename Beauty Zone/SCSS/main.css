@@ -80,16 +80,14 @@ address {
   color: var(--color_secondary_dark);
   text-decoration: none;
 }
+.link:hover {
+  color: var(--color_secondary_light);
+}
 
 .link_footer {
   color: var(--color_primary_light);
   text-decoration: none;
 }
-
-.link:hover {
-  color: var(--color_secondary_light);
-}
-
 .link_footer:hover {
   color: var(--color_secondary_light);
   text-decoration: none;
@@ -103,7 +101,6 @@ address {
   border: solid;
   cursor: pointer;
 }
-
 .button:hover {
   background-color: transparent;
   color: var(--color_secondary_dark);

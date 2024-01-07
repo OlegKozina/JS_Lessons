@@ -5,8 +5,8 @@
     border-radius: 32px;
     border:  solid;
     cursor: pointer;
-}
-.button:hover{
-    background-color: transparent;
-    color: var(--color_secondary_dark);
+    &:hover{
+        background-color: transparent;
+        color: var(--color_secondary_dark);
+    }
 }

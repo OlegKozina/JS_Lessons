@@ -196,6 +196,16 @@ p {
   flex-grow: 1;
   justify-content: center;
 }
+@media screen and (max-width: 1200px) {
+  .header__menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header__button {
+    display: none;
+  }
+}
 
 .link {
   color: var(--colorch);
