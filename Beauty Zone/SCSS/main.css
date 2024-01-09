@@ -124,6 +124,7 @@ address {
   gap: 40px;
   position: absolute;
   width: 64%;
+  background-color: rgba(255, 255, 255, 0.2509803922);
 }
 
 .header-nav {
@@ -166,6 +167,7 @@ address {
 .hero-section-title {
   font-size: 21px;
   margin-bottom: 16px;
+  color: var(--color_secondary_dark);
 }
 
 .accent {
@@ -194,6 +196,8 @@ address {
 
 .intro-title {
   max-width: 529px;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
 }
 
 .why-title {

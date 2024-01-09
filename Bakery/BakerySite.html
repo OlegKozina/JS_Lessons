@@ -11,7 +11,7 @@
     <div class="container">
        <div class="header__container">
         <nav class="header__nav">
-            <a href="BakerySite.html">
+            <a class="header__logo" href="BakerySite.html">
                 <img src="./Html_Images/logo.svg" alt="Логотип сучасної пекарні">
             </a>
             <ul class="header__menu">
@@ -22,6 +22,20 @@
             </ul>
         </nav>
         <button class="header__button modal-btn-open" type="button" >Замовити дзвінок</button>
+        <button class="header__burger menu-btn-open" type="button">
+            <svg width="24" height="24">
+                <use href="./Html_Images/icons.svg#icon-Vector"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu">
+            <button class="mobile-menu__button menu-btn-close" type="button"><img src="./Html_Images/icon.svg" alt=""></button>
+            <ul class="mobile-menu__nav">
+                <li>Наші традиції</li>
+                <li>Наші традиції</li>
+                <li>Наші традиції</li>
+                <li>Наші традиції</li>
+            </ul>
+        </div>
        </div> 
     </div>
  </header>
@@ -29,6 +43,7 @@
      <section class="hero-section">
        <div class="container">
         <h1 class="hero-section__title"><span class="text-brand">Сучасна</span> пекарня</h1>
+        <button class="hero-section__button modal-btn-open" type="button" >Замовити дзвінок</button>
        </div>
      </section>
     <section class="advantages-section">
@@ -52,11 +67,13 @@
                          А ще у наших пекарень стильний дизайн
                          та висока якість обслуговування!</p>
                 </div>
-                <img class="traditions-section__baker-image" src="./Html_Images/baker-man.jpg" alt="Чоловік пекар">  
+                <img class="traditions-section__baker-image" 
+                srcset="./Html_Images/baker-man.jpg 1x, ./Html_Images/baker-man@2x.jpg 2x"
+                src="./Html_Images/baker-man.jpg" alt="Чоловік пекар">  
             </div> 
         </div>
      </section>
-     <section class="cooks-section section" id="cooks">
+     <!-- <section class="cooks-section section" id="cooks">
         <div class="container">
             <h2 class="cooks-section__title section__titles section__titles--centered">Наші найкращі <span class="text-brand">шеф-кухарі</span></h2>
             <ul class="cooks-section__container">
@@ -83,8 +100,8 @@
                </article></li>
            </ul>
            </div>
-     </section>
-     <section class="formats-section section" id="formats">
+     </section> -->
+     <!-- <section class="formats-section section" id="formats">
        <div class="container">
         <h2 class="formats-section__title section__titles section__titles--centered">Формати</h2>
        <div class="formats-section__container">
@@ -129,8 +146,8 @@
         </button>
        </div>
        </div>
-     </section>
-     <section clas="contacts-section section" id="contacts">
+     </section> -->
+     <!-- <section clas="contacts-section section" id="contacts">
         <div class="container">
             <div class="contacts-section__container">
                 <div class="contacts-section__form">
@@ -162,9 +179,9 @@
                </iframe>
             </div>
         </div>
-     </section>
+     </section> -->
  </main>
- <footer class="footer">
+ <!-- <footer class="footer">
 <div class="container">
     <div class="footer__container">
         <nav class="footer__nav">
@@ -212,7 +229,7 @@
        
     </div>
 </div>
- </footer>
+ </footer> -->
  <div class="backdrop is-hidden">
     <div class="modal">
         <button class="modal__cross-button modal-btn-close" type="button"><img src="./Html_Images/icon.svg" alt=""></button>
@@ -250,5 +267,6 @@
     </div> 
  </div>
  <script src="./JS/modal.js"></script>
+ <script src="./JS/mobile-menu.js"></script>
 </body>
 </html>
